@@ -132,6 +132,7 @@ body{
 }
 .likes img {
     height: 30px;
+    cursor: pointer;
 }
 /* ===== Scrollbar CSS ===== */
   /* Firefox */

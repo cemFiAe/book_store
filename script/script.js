@@ -11,6 +11,7 @@ function renderBooks(){
         content.innerHTML += getBooksTemplate(i);
     }
 }
+
 function addComment(i){
     let comment = document.getElementById(`commit-${i}`);
 
@@ -18,18 +19,14 @@ function addComment(i){
         alert('Bitte geben Sie einen Kommentar ein.');
         return; // Beende die Funktion, wenn das Feld leer ist
     }
-
     if (comment.value){
         additionalComment = {
         name: "Cem",
         comment: comment.value
         }
     };
-
     books[i].comments.push(additionalComment);
-
     comment.value = "";
-
     setLocalStorage();
     renderBooks();
 }
@@ -46,5 +43,4 @@ function like(index) {
     }
     document.getElementById("likes-" + index).textContent = books[index].likes;
     setLocalStorage();
-    render();
 }
