@@ -46,7 +46,8 @@ open index.html
 
 ## Screenshots
 
-![Book Store Screenshot](image.png)
+![image](https://github.com/user-attachments/assets/0e341429-ed93-465a-ab30-cbb7d385572a)
+
 
 ## Author
 
